@@ -1,0 +1,12 @@
+name = Custom Modules
+description = this module is for searching multiple names in your Drupal installation. instread of search one by one 
+core = 7.x
+version = 1.0
+files[] = drupal_bulk_search.module
+package = Druapl Bulk Search
+;dependencies[] = autoload
+;php = 5.2
+
+php = 5.3
+stylesheets[all][] = css/drupal_bulk_search.css
+scripts[] = js/drupal_bulk_search.js
