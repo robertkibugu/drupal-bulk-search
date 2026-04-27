@@ -1,0 +1,36 @@
+function _custom_menu(){
+ $items = array();
+        $items['bulk_search'] = array(
+        'page callback' => 'search_bulk',
+        'page arguments' => array(''),
+        'access callback' => 'user_is_logged_in',
+        //'file' => 'inc/dates.inc',
+        'access arguments' => array('access content'),
+    	);
+
+      $items['bulk_search/process_search'] = array(
+        'page callback' => 'process_bulk_search',
+        'page arguments' => array(''),
+        'access callback' => 'user_is_logged_in',
+        'access arguments' => array('access content'),
+    	);
+
+                    // Add a new menu item for downloading the CSV report
+      $items['bulk_search/download_csv_report'] = array(
+        'page callback' => 'bulk_download_csv_report',
+        'page arguments' => array(''),
+        'access callback' => 'user_is_logged_in',
+        'access arguments' => array('access content'),
+      );
+
+            // Add a new menu item for downloading the CSV report
+      $items['bulk_search/download_pdf_report'] = array(
+          'page callback' => 'bulk_download_pdf_report',
+          'page arguments' => array(''),
+          'access callback' => 'user_is_logged_in',
+          'access arguments' => array('access content'),
+      );
+
+
+		return $items;
+	}
