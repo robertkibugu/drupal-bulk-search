@@ -1,5 +1,5 @@
 # drupal-bulk-search
-having hundreds or thousands of names to search in your Drupal 7, use this module to search for them
+Having hundreds or thousands of names to search in your Drupal 7?, use this module to search for them
 you will need to add your search items in a .csv file
 the items should be in only one column. 
 with a column name like 'Names'
